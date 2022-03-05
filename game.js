@@ -69,6 +69,8 @@ function checkAnswer(currentLevel) {
 
     if (userClickedPattern[currentLevel] === gamePattern[currentLevel]) {
 
+        var letsgo = new Audio("sounds/letsgo.mp3");
+        letsgo.play();
         console.log("success");
 
         // $("#level-title").addClass("correct");
